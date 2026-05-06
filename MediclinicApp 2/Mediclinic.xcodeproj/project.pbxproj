@@ -1,0 +1,372 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA01 /* MediclinicApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF01 /* MediclinicApp.swift */; };
+		AA02 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF02 /* ContentView.swift */; };
+		AA03 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF03 /* Models.swift */; };
+		AA04 /* HospitalDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF04 /* HospitalDataService.swift */; };
+		AA05 /* DesignSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF05 /* DesignSystem.swift */; };
+		AA06 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF06 /* WelcomeView.swift */; };
+		AA07 /* SidebarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF07 /* SidebarView.swift */; };
+		AA08 /* ContentPanels.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF08 /* ContentPanels.swift */; };
+		AA10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF10 /* Assets.xcassets */; };
+		BB01 /* TopShelfProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE01 /* TopShelfProvider.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		PHEMBED /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		EE01 /* TopShelfProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopShelfProvider.swift; sourceTree = "<group>"; };
+		EEENT /* TopShelfExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TopShelfExtension.entitlements; sourceTree = "<group>"; };
+		EEPLIST /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF01 /* MediclinicApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediclinicApp.swift; sourceTree = "<group>"; };
+		FF02 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FF03 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		FF04 /* HospitalDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitalDataService.swift; sourceTree = "<group>"; };
+		FF05 /* DesignSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignSystem.swift; sourceTree = "<group>"; };
+		FF06 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		FF07 /* SidebarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarView.swift; sourceTree = "<group>"; };
+		FF08 /* ContentPanels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentPanels.swift; sourceTree = "<group>"; };
+		FF10 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FFAPP /* Mediclinic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mediclinic.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFENT /* Mediclinic.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Mediclinic.entitlements; sourceTree = "<group>"; };
+		FFEXT /* TopShelfExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TopShelfExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		GEXTROOT /* TopShelfExtension */ = {
+			isa = PBXGroup;
+			children = (
+				EE01 /* TopShelfProvider.swift */,
+				EEPLIST /* Info.plist */,
+				EEENT /* TopShelfExtension.entitlements */,
+			);
+			path = TopShelfExtension;
+			sourceTree = "<group>";
+		};
+		GMAIN = {
+			isa = PBXGroup;
+			children = (
+				GROOT /* Mediclinic */,
+				GEXTROOT /* TopShelfExtension */,
+				GPROD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		GMODELS /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FF03 /* Models.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		GPROD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FFAPP /* Mediclinic.app */,
+				FFEXT /* TopShelfExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		GROOT /* Mediclinic */ = {
+			isa = PBXGroup;
+			children = (
+				FF10 /* Assets.xcassets */,
+				FFENT /* Mediclinic.entitlements */,
+				GSRC /* Sources */,
+			);
+			path = Mediclinic;
+			sourceTree = "<group>";
+		};
+		GSERVICES /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				FF04 /* HospitalDataService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		GSRC /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				FF01 /* MediclinicApp.swift */,
+				GVIEWS /* Views */,
+				GMODELS /* Models */,
+				GSERVICES /* Services */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		GVIEWS /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FF02 /* ContentView.swift */,
+				FF05 /* DesignSystem.swift */,
+				FF06 /* WelcomeView.swift */,
+				FF07 /* SidebarView.swift */,
+				FF08 /* ContentPanels.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		TTARGET /* Mediclinic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCLAPP /* Build configuration list for PBXNativeTarget "Mediclinic" */;
+			buildPhases = (
+				PHSOURCES /* Sources */,
+				PHRESOURCES /* Resources */,
+				PHEMBED /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Mediclinic;
+			productName = Mediclinic;
+			productReference = FFAPP /* Mediclinic.app */;
+			productType = "com.apple.product-type.application";
+		};
+		TTARGETEXT /* TopShelfExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCLEXT /* Build configuration list for PBXNativeTarget "TopShelfExtension" */;
+			buildPhases = (
+				PHEXTSOURCES /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TopShelfExtension;
+			productName = TopShelfExtension;
+			productReference = FFEXT /* TopShelfExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		PPROJ /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					TTARGET = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					TTARGETEXT = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = BCLPROJ /* Build configuration list for PBXProject "Mediclinic" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = GMAIN;
+			productRefGroup = GPROD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				TTARGET /* Mediclinic */,
+				TTARGETEXT /* TopShelfExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		PHRESOURCES /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA10 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		PHEXTSOURCES /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB01 /* TopShelfProvider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		PHSOURCES /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA01 /* MediclinicApp.swift in Sources */,
+				AA02 /* ContentView.swift in Sources */,
+				AA03 /* Models.swift in Sources */,
+				AA04 /* HospitalDataService.swift in Sources */,
+				AA05 /* DesignSystem.swift in Sources */,
+				AA06 /* WelcomeView.swift in Sources */,
+				AA07 /* SidebarView.swift in Sources */,
+				AA08 /* ContentPanels.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		BCDEBUG /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Mediclinic/Mediclinic.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V7DXDB86H5;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Mediclinic;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mediclinic.tv;
+				PRODUCT_NAME = Mediclinic;
+				SDKROOT = appletvos;
+				SUPPORTED_PLATFORMS = "appletvos appletvsimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 16.0;
+			};
+			name = Debug;
+		};
+		BCDEBUGEXT /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_ENTITLEMENTS = TopShelfExtension/TopShelfExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V7DXDB86H5;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = TopShelfExtension/Info.plist;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mediclinic.tv.topshelf;
+				PRODUCT_NAME = TopShelfExtension;
+				SDKROOT = appletvos;
+				SUPPORTED_PLATFORMS = "appletvos appletvsimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 18.0;
+			};
+			name = Debug;
+		};
+		BCRELEASE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Mediclinic/Mediclinic.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V7DXDB86H5;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Mediclinic;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mediclinic.tv;
+				PRODUCT_NAME = Mediclinic;
+				SDKROOT = appletvos;
+				SUPPORTED_PLATFORMS = "appletvos appletvsimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 16.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BCRELEASEEXT /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_ENTITLEMENTS = TopShelfExtension/TopShelfExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V7DXDB86H5;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = TopShelfExtension/Info.plist;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mediclinic.tv.topshelf;
+				PRODUCT_NAME = TopShelfExtension;
+				SDKROOT = appletvos;
+				SUPPORTED_PLATFORMS = "appletvos appletvsimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 18.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BCLAPP /* Build configuration list for PBXNativeTarget "Mediclinic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCDEBUG /* Debug */,
+				BCRELEASE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCLEXT /* Build configuration list for PBXNativeTarget "TopShelfExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCDEBUGEXT /* Debug */,
+				BCRELEASEEXT /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCLPROJ /* Build configuration list for PBXProject "Mediclinic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCDEBUG /* Debug */,
+				BCRELEASE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = PPROJ /* Project object */;
+}
